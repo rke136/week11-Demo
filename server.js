@@ -12,8 +12,6 @@ app.get('/search', (req, res) => {
 
 app.post('/search', (req, res) => {
     let movieTitle = req.body.movieTitle;
-    console.log(movieTitle);
-
 
     let movieUrl = `https://api.themoviedb.org/3/search/movie?api_key=4ca94f8b470d7e34bd3f59c3914295c8&query=${movieTitle}`;
     let genres = 'https://api.themoviedb.org/3/genre/movie/list?api_key=4ca94f8b470d7e34bd3f59c3914295c8&language=en-US';
