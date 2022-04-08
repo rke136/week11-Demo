@@ -16,7 +16,7 @@
             </form>
         </div>
 
-
+        <% if(movieData) { %>
         <div class="result-container">
             <ul class="movie-data-list">
                 <li><span class="bold">Title: </span><%= movieData.title %> </li>
@@ -30,6 +30,8 @@
                 <img src="<%= movieData.posterUrl %>" alt="">
             </div>
         </div>
+
+        <% } %>
     </div>
 
 
